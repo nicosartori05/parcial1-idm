@@ -4,186 +4,6 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-@media screen and (max-width: 768px){
-    
-    header{
-        background-color: #2B4C66;
-        height: 64px;
-        line-height: 4em;
-        text-align: center;
-        color: white;
-    }
-    /* funcionalidad al menu hamburguesa */
-    #hamburguesa li:last-child{
-        display: none;
-    }
-    #barra {
-        display: none;
-    }
-    nav:target #barra {
-        display: block;
-    }
-    nav:target #hamburguesa li:first-child{
-        display: none;
-    }
-    nav:target #hamburguesa li:last-child{
-        display: block;
-    }
-    
-    /* estilos para el menu hamburguesa */
-    
-    nav {
-        position:absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        /* background: lime; */
-    }
-    
-    #hamburguesa li{
-        list-style: none;
-        text-indent: -100px;
-        overflow: hidden;
-        margin-top: .75em;
-        width: 2.5em;
-        /* background-color: orange; */
-    }
-    #hamburguesa li a{
-        background-image: url("../img/menu-hamburguesa.png");
-        background-size: contain;
-        display: block;
-        height: 2.5em;
-    }
-    
-    #barra {
-        display: none;
-        width: 100%;
-        height: calc(100vh - 4em);
-        position: absolute;
-        top: 4em;
-        left: 0;
-        background-color: #f36;
-    }
-    
-    #barra li {
-        list-style: none;
-        margin: 1em;
-        width: 90%;
-        display: inline-block;
-    }
-    
-    #barra li a{
-        text-decoration: none;
-        display: block;
-        background-color: #f9f;
-        color: black;
-        text-align: center;
-        line-height: 2em;
-    }
-    nav {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-    
-    #hamburguesa li {
-        list-style: none;
-        text-indent: -100px;
-        overflow: hidden;
-        margin-top: .75em;
-        width: 2.5em;
-    }
-    
-    h2 {
-        margin-bottom: 1em;
-    }
-    p{
-        margin-bottom: 1em;
-        line-height: 1.5em;
-    }
-    
-    #barra {
-        width: 100%;
-        height: calc(100vh - 4em);
-        position: absolute;
-        top: 4em;
-        left: -100%;
-        background-color: #f36;
-        transition: left 1s ease;
-    }
-    
-    nav:target #barra {
-        left: 0;
-    }
-    
-    
-    /* ESTILOS GENERALES */
-    .container{
-        width: 100%;
-    }
-    #portada img{
-        width: 100%;
-    }
-    iframe{
-        width: 100%;
-    }
-    
-    .titulos{
-        background-color: #2B4C66;
-        font-size: 1.8rem;
-        padding: 5px 2px 5px 2px;
-        margin: 2rem 0 1rem 0;
-        text-align: center;
-        color: white;
-    }
-    .titulos2{
-        margin: 1rem 0 1rem 0;
-        padding: 5px 0;
-        color: #2B4C66;
-        font-weight: 700;
-        font-size: 1.3rem;
-        text-align: center;
-    }
-    
-    p{
-        margin: 1rem .5rem 1rem .5rem;
-    }
-    main ul{
-        padding: 2px 0 2px 0;
-        color: #5293C4;
-        font-weight: bold;
-        margin-bottom: 10px;
-        
-    }
-    main li{
-        margin: 1rem 2rem 1rem 2rem;
-        margin-top: 1rem;
-    }
-    
-    /* SECCION 1 */
-    #iconografia{
-        display: flex;
-    }
-    .iconos{
-        text-align: center;
-    }
-    .iconos img{
-        width: 40%;
-    }
-
-
-    /* SECCION 2 */
-    
-
-
-    
-
-    
-    
-
-    
-}
 @media screen and (max-width: 480px){
     header{
         background-color: #2B4C66;
@@ -301,8 +121,7 @@
 .container{
     width: 100%;
 }
-
-img{
+.img-mobile{
     width: 100%;
 }
 iframe{
@@ -354,6 +173,10 @@ main li{
 .iconos img{
     width: 20%;
 }
+.img-mobile{
+    width: 100%;
+    border-radius: 5px;
+}
 
 /* FORMULARIO DE CONTACTO */
 
@@ -389,6 +212,212 @@ button:hover{
 }
 } 
 
+@media screen and (max-width: 768px){
+    header{
+        background-color: #2B4C66;
+         height: 64px;
+        line-height: 4em;
+        text-align: center;
+        color: white;
+    }
+    /* funcionalidad al menu hamburguesa */
+    #hamburguesa li:last-child{
+        display: none;
+    }
+    #barra {
+        display: none;
+    }
+    nav:target #barra {
+        display: block;
+    }
+    nav:target #hamburguesa li:first-child{
+        display: none;
+    }
+    nav:target #hamburguesa li:last-child{
+        display: block;
+    }
+    
+    /* estilos para el menu hamburguesa */
+    
+    nav {
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        /* background: lime; */
+    }
+    
+    #hamburguesa li{
+        list-style: none;
+        text-indent: -100px;
+        overflow: hidden;
+        margin-top: .75em;
+        width: 2.5em;
+        /* background-color: orange; */
+    }
+    #hamburguesa li a{
+        background-image: url("../img/menu-hamburguesa.png");
+        background-size: contain;
+        display: block;
+        height: 2.5em;
+    }
+    
+    #barra {
+        display: none;
+        width: 100%;
+        height: calc(100vh - 4em);
+        position: absolute;
+        top: 4em;
+        left: 0;
+        background-color: #f36;
+    }
+    
+    #barra li {
+        list-style: none;
+        margin: 1em;
+        width: 90%;
+        display: inline-block;
+    }
+    
+    #barra li a{
+        text-decoration: none;
+        display: block;
+        background-color: #f9f;
+        color: black;
+        text-align: center;
+        line-height: 2em;
+    }
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    #hamburguesa li {
+        list-style: none;
+        text-indent: -100px;
+        overflow: hidden;
+        margin-top: .75em;
+        width: 2.5em;
+    }
+    
+    h2 {
+        margin-bottom: 1em;
+    }
+    p{
+        margin-bottom: 1em;
+        line-height: 1.5em;
+    }
+    
+    #barra {
+        width: 100%;
+        height: calc(100vh - 4em);
+        position: absolute;
+        top: 4em;
+        left: -100%;
+        background-color: #f36;
+        transition: left 1s ease;
+    }
+    
+    nav:target #barra {
+        left: 0;
+    }
+
+
+    /* ESTILOS GENERALES */
+    .container{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+
+    .titulos{
+        background-color: #2B4C66;
+        font-size: 1.8rem;
+        padding: 5px 2px 5px 2px;
+        margin: 2rem 0 1rem 0;
+        text-align: center;
+        color: white;
+    }
+    .titulos2{
+        margin: 1rem 0 1rem 0;
+        padding: 5px 0;
+        color: #2B4C66;
+        font-weight: 700;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    p{
+        margin: 1rem .5rem 1rem .5rem;
+    }
+    main ul{
+        padding: 2px 0 2px 0;
+        color: #5293C4;
+        font-weight: bold;
+        margin-bottom: 10px;
+        
+    }
+    main li{
+        margin: 1rem 2rem 1rem 2rem;
+        margin-top: 1rem;
+    }
+
+    /* PORTADA */
+    #portada img{
+        width: 100%;
+    }
+
+    /* SECCION 1 */
+    #iconografia{
+        display: flex;
+    }
+    .iconos{
+        text-align: center;
+    }
+    .iconos img{
+        width: 40%;
+    }
+
+/* SECCION 2 */
+
+    #destruyendo-mitos{
+        padding: 1rem;
+        display: flex;
+    }
+    #primera-parte{
+        margin-top: 1.5rem;
+        padding: 1rem;
+        display: flex;
+
+    }
+
+    #seccion-2 img{
+        border-radius: 5px;
+    }
+
+
+/* SECCION 3 */
+
+    #seccion-3{
+        text-align: center;
+    }
+    #seccion-3 iframe{
+        width: 75%;
+        height: 20rem;
+    }
+
+
+/* SECCION 4 */
+.info-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+}
 
 
 
